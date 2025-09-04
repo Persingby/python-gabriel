@@ -16,11 +16,15 @@ if os.path.exists(image_file):
 else:
     print("Imagem não encontrada")
 
+SPEED = 1
+
 running = True
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+
+    keys = pygame.key.get_pressed()
         
     screen.fl(BG_COLOR)
 
